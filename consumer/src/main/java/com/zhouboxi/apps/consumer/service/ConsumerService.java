@@ -1,4 +1,4 @@
-package com.zhouboxi.apps.consumer;
+package com.zhouboxi.apps.consumer.service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
