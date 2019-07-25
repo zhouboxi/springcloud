@@ -59,6 +59,15 @@ adding repo from: https://download.docker.com/linux/centos/docker-ce.repo
 grabbing file https://download.docker.com/linux/centos/docker-ce.repo to /etc/yum.repos.d/docker-ce.repo
 repo saved to /etc/yum.repos.d/docker-ce.repo
 ...
+或者
+--- 在 /etc/docker/daemon.json 中写入如下内容（如果文件不存在请新建该文件）
+{
+  "registry-mirrors": [
+    "https://registry.docker-cn.com"
+  ]
+之后重新启动服务。
+$ sudo systemctl daemon-reload
+$ sudo systemctl restart docker
 ```
 5.可以查看所有仓库中所有docker版本，并选择特定版本安装
 ```
