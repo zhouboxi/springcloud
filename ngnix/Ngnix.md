@@ -54,6 +54,8 @@ Loading mirror speeds from cached hostfile
 4. 设置yum源
 ```
 [root@localhost ~]# yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+--
+sudo yum-config-manager --add-repo https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
 已加载插件：fastestmirror, langpacks
 adding repo from: https://download.docker.com/linux/centos/docker-ce.repo
 grabbing file https://download.docker.com/linux/centos/docker-ce.repo to /etc/yum.repos.d/docker-ce.repo
