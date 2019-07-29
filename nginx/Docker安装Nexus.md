@@ -116,6 +116,8 @@ mvn deploy:deploy-file
 
 建议在上传第三方 JAR 包时，创建单独的第三方 JAR 包管理仓库，便于管理有维护。（maven-3rd）
 -DrepositoryId=nexus-releases 对应的是 settings.xml 中 Servers 配置的 ID 名称。（授权）
+![enter description here](./images/2019-07-29_100017.png)
+![enter description here](./images/2019-07-29_095911.png)
 # 配置代理仓库
 ```
 <repositories>
