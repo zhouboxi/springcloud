@@ -33,7 +33,7 @@ http://ip:5000/v2/
   ```
   ## 配置 Docker Registry 客户端
 概述
-我们的教学案例使用的是 Ubuntu Server 16.04 LTS 版本，属于 systemd 系统，需要在 /etc/docker/daemon.json 中增加如下内容（如果文件不存在请新建该文件）
+我们的教学案例使用的是 Ubuntu Server 16.04 LTS 版本，属于 systemd 系统，需要在 /etc/docker/daemon.json 中增加如下内容（如果文件不存在请新建该文件）ip为自己的ip
  ```
 {
   "registry-mirrors": [
@@ -117,4 +117,4 @@ services:
  ```
 注意：请将配置文件中的主机和端口换成自己仓库的地址
 
-运行成功后在浏览器访问：http://192.168.75.133:5000
+运行成功后在浏览器访问：http://192.168.75.133:8080
