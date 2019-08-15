@@ -214,7 +214,7 @@ cat id_rsa.pub
 复制 id_rsa.pub 中的秘钥到 GitLab：
 ![enter description here](./images/2019-08-15_100020.png)
 通过 ssh 的方式将代码拉取到本地
-# 测试集成效果
+#### 测试集成效果
 ![enter description here](./images/2019-08-15_100030.png)
 其他命令
 删除注册信息：
@@ -225,7 +225,7 @@ gitlab-ci-multi-runner unregister --name "名称"
 ```
 gitlab-ci-multi-runner list
 ```
-### Docker版操作
+## Docker版操作
 1.去docker官方仓库去查询相对应版本的gitRunner
 #### 概述
 为了配置方便，我们使用 docker 来部署 GitLab Runner
