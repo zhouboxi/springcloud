@@ -74,7 +74,7 @@ services:
 FROM ubuntu:xenial
 MAINTAINER topsale@vip.qq.com
 ```
-# 更新数据源
+### 更新数据源
 ```
 WORKDIR /etc/apt
 RUN echo 'deb http://mirrors.aliyun.com/ubuntu/ xenial main restricted universe multiverse' > sources.list
