@@ -43,7 +43,7 @@ test2
 test1
 ...
 ```
-### ErLang
+### ErLang(也是一种语言,他是非常公平的调度)
 ```
 test1
 test2
