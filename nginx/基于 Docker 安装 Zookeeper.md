@@ -131,6 +131,10 @@ ZooKeeper JMX enabled by default
 Using config: /conf/zoo.cfg
 Mode: follower
 ```
+# 遇到容器内部没有端口情况,进入容器进行zoo.cfg进行添加
+```
+sed -i "1i clientPort=2181" zoo.cfg
+```
 ### 伪集群模式
 ```
 ### docker-compose.yml
