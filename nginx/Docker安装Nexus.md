@@ -74,7 +74,7 @@ Release: 1.0.0/1.0.0-RELEASE
 Snapshot: 1.0.0-SNAPSHOT
 在项目 pom.xml 中设置的版本号添加 SNAPSHOT 标识的都会发布为 SNAPSHOT 版本，没有 SNAPSHOT 标识的都会发布为 RELEASE 版本。
 SNAPSHOT 版本会自动加一个时间作为标识，如：1.0.0-SNAPSHOT 发布后为变成 1.0.0-SNAPSHOT-20180522.123456-1.jar
-# 配置自动化部署
+# 配置自动化部署(deploy到仓库)
 在 pom.xml 中添加如下代码：
 ```
 <distributionManagement>  
@@ -118,7 +118,7 @@ mvn deploy:deploy-file
 -DrepositoryId=nexus-releases 对应的是 settings.xml 中 Servers 配置的 ID 名称。（授权）
 ![enter description here](./images/2019-07-29_100017.png)
 ![enter description here](./images/2019-07-29_095911.png)
-# 配置代理仓库
+# 配置代理仓库(下载)
 ```
 <repositories>
     <repository>
