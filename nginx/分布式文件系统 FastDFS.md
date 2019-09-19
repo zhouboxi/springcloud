@@ -70,12 +70,13 @@ services:
     volumes:
       - ./storage:/fastdfs/storage
     network_mode: host
-# Dockerfile
-FROM ubuntu:xenial
-MAINTAINER topsale@vip.qq.com
+
 ```
 ### 更新数据源
 ```
+# Dockerfile
+FROM ubuntu:xenial
+MAINTAINER topsale@vip.qq.com
 WORKDIR /etc/apt
 RUN echo 'deb http://mirrors.aliyun.com/ubuntu/ xenial main restricted universe multiverse' > sources.list
 RUN echo 'deb http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted universe multiverse' >> sources.list
