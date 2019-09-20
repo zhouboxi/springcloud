@@ -87,12 +87,12 @@ IKAnalyzer 是一个开源的，基于 Java 语言开发的轻量级的中文分
 
 # 部署 Solr 并安装 IKAnalyzer
 创建一个名为 /usr/local/docker/solr/ikanalyzer 目录
-`
+```
 /usr/local/docker/solr：用于存放 docker-compose.yml 配置文件
 /usr/local/docker/solr/ikanalyzer：用于存放 Dockerfile 镜像配置文件
-`
+```
 ### docker-compose.yml
-`
+```
 version: '3.1'
 services:
   solr:
@@ -103,7 +103,7 @@ services:
       - 8983:8983
     volumes:
       - ./solrdata:/opt/solrdata
-`
+```
 ### Dockerfile
 ```
 FROM solr
