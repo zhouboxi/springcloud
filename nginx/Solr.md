@@ -104,7 +104,7 @@ services:
     volumes:
       - ./solrdata:/opt/solrdata
 ```
-### Dockerfile
+### Dockerfile(拷贝相关文件到该目录)
 ```
 FROM solr
 MAINTAINER Lusifer <topsale@vip.qq.com>
