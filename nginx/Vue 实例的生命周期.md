@@ -12,7 +12,7 @@ Vue 实例有一个完整的生命周期，也就是从开始创建、初始化�
 
 特别值得注意的是 created 钩子函数和 mounted 钩子函数的区别
 
-## 钩子函数的触发时机
+# 钩子函数的触发时机
 ## beforeCreate
 在实例初始化之后，数据观测(data observer) 和 event/watcher 事件配置之前被调用。
 
