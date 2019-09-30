@@ -42,6 +42,14 @@ vue list
 ![enter description here](./images/2019-09-29_185916_1.png)
 
 ## 第一个 vue-cli 应用程序
+```
+创建Vue项目出错，提示vue : 无法加载文件C:\Users\xxx\AppData\Roaming\npm\vue.ps1，因为在此系统上禁止运行脚本。有关详细信息，请参阅  https:/go.microsoft.com/fwlink/?LinkID=135170
+1. 以管理员身份运行PowerShell
+2. 执行：get-ExecutionPolicy，回复Restricted，表示状态是禁止的
+3.执行：set-ExecutionPolicy RemoteSigned
+4.选择Y
+注意：一定要以管理员的身份运行PowerShell，不是cmd窗口！
+```
 ## 创建一个基于 webpack 模板的 vue 应用程序
 ```
 #这里的 myvue 是项目名称，可以根据自己的需求起名
